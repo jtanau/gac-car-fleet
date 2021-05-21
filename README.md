@@ -1,3 +1,12 @@
+Développé par Jean-Marc Tanau 
+# Enoncé
+L’interface à réaliser est une micro-application en React, les données seront stockées « en dur ». Vous pouvez utiliser des bibliothèques ou frameworks si vous le souhaitez.
+La société Suricar souhaite inventorier les véhicules qu'elle loue à ses collaborateurs afin de connaître ceux disponibles et ainsi pouvoir consulter le détail de chaque véhicule. Suricar dispose aujourd'hui de plusieurs fichiers CSV reprenant le suivi de son parc automobile, elle aimerait rendre l'information plus présentable et navigable.
+Un véhicule est identifié par son immatriculation. On peut également trouver sa marque, son modèle et sa disponibilité, qu'il soit attribué ou non.
+Il serait également utile de connaître la taille du parc automobile inventorié selon sa disponibilité, s'il est possible de remonter l'information.
+La disponibilité du véhicule est une information relativement importante et doit pouvoir être modifiée en un clic sans rentrer dans le détail d'un véhicule.
+L'inventaire donne un aperçu global, il doit être possible d'afficher un véhicule en particulier en reprenant l'ensemble des informations en les organisant logiquement. Les éléments importants doivent ressortir et être mis en valeur, on retrouve parmi ceux-ci : l'immatriculation, la marque, le modèle, la date de MEC (mise en circulation) ainsi que le dernier kilométrage relevé.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
