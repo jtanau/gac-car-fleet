@@ -1,12 +1,16 @@
 import '../styles/Banner.css'
-import logo from '../assets/logo.png'
+import logo_guillemotCorp from '../assets/logo_guillemotCorp.png'
+import logo_hercules from '../assets/logo_hercules.png'
+import logo_thrustmaster from '../assets/logo_thrustmaster.png'
+
 
 function Banner() {
-        const title = 'Gac Car Fleet'
         return (
             <div className='lmj-banner'>
-                <img src={logo} alt='Gac Car Fleet' className='lmj-logo' />
-                <h1 className='lmj-title'>{title}</h1>
+                <div className='red-carpet'></div>
+                <img src={logo_thrustmaster} alt='' className='lmj-logo' />
+                <img src={logo_hercules} alt='' className='lmj-logo' />
+                <img src={logo_guillemotCorp} alt='' className='lmj-logo' /> 
             </div>
         )
 }

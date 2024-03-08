@@ -1,0 +1,111 @@
+.podium-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .podium {
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    animation: rise 2s ease-out forwards;
+  }
+  
+  #first {
+    height: 300px;
+    width: 150px;
+    background-color: gold;
+  }
+  
+  #second {
+    height: 250px;
+    width: 150px;
+    background-color: silver;
+    animation-delay: 0.5s;
+  }
+  
+  #third {
+    height: 200px;
+    width: 150px;
+    background-color: #614E1A ;
+    animation-delay: 1s;
+  }
+  
+  .podium span {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
+  .winner {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .winner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .trophy {
+    font-size: 3em; /* Ajuster selon la taille désirée */
+    animation: shine 2s infinite;
+    position: absolute; /* Positionnement absolu par rapport à son parent */
+    top: -30px; /* Ajuster selon le besoin */
+    z-index: 10;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes shine {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+    }
+  }
+
+  #first .winner {
+    position: relative; /* Pour positionner absolument le trophée */
+    animation: winnerEffect 5s ease-in-out infinite;
+  }
+  
+  @keyframes winnerEffect {
+    0% { box-shadow: 0 0 10px #FFD700; }
+    50% { box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
+    100% { box-shadow: 0 0 10px #FFD700; }
+  }

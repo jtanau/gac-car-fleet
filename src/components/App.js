@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react'
 import Banner from './Banner'
-import logo from '../assets/logo.png'
-import ShoppingList from './ShoppingList'
 import '../styles/Layout.css'
 import { readString } from 'react-papaparse'
 import {cars} from '../datas/data'
-import Cart from './Cart'
+import Podium from './Podium'
 
 function App() {
 
@@ -21,13 +19,9 @@ console.log(resu.data.length);
 
 	return (
 		<div>
-			<Banner>
-				<img src={logo} alt='logo-Gac-car-fleet' className='lmj-logo' />
-				<h1 className='lmj-title'>Gac Car Fleet</h1>
-			</Banner>
+			<Banner />				
 			<div className='lmj-layout-inner'>
-				<Cart cart={cart} updateCart={updateCart} />
-				<ShoppingList cart={cart} updateCart={updateCart} />
+				<Podium />
 			</div>
 			
 		</div>
